@@ -701,6 +701,9 @@
 
         clearInterval(timer);
         document.getElementById('day').innerHTML = '0';
+        document.getElementById('hrs').innerHTML = '0';
+        document.getElementById('mins').innerHTML = '0';
+        document.getElementById('secs').innerHTML = '0';
 
         return;
       }
@@ -734,20 +737,34 @@
       gallery.classList.remove("d-none");
       gift.classList.remove("d-none");
       footer.classList.remove("d-none");
-      AOS.init();
+      AOS.init(
+        {
+          once: true
+        }
+      );
       document.getElementById("songs").play();
       separator.scrollIntoView();
     });
   </script>
   <script>
     function copyBca() {
-      navigator.clipboard.writeText("2640399905");
-      window.alert("Berhasil Menyalin Nomor Rekening BCA");
+      navigator.clipboard.writeText("2640399905")
+      .then(() => {
+        alert("Berhasil Menyalin Nomor Rekening BCA");
+      })
+      .catch(() => {
+        alert("Terjadi Kesalahan, Tidak Dapat Menyanil Nomor Rekening");
+      });
     }
 
     function copyBni() {
-      navigator.clipboard.writeText("1208224532");
-      window.alert("Berhasil Menyalin Nomor Rekening BNI");
+      navigator.clipboard.writeText("1208224532")
+      .then(() => {
+        alert("Berhasil Menyalin Nomor Rekening BNI");
+      })
+      .catch(() => {
+        alert("Terjadi Kesalahan, Tidak Dapat Menyanil Nomor Rekening");
+      });
     }
 
     const to = new URLSearchParams(window.location.search);
