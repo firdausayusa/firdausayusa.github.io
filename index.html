@@ -233,6 +233,12 @@
     .h-15px {
       height: 15px;
     }
+
+    .transition {
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
   </style>
 </head>
 
@@ -570,14 +576,8 @@
             </div>
           </div>
 
-          <p style="font-size: 16px;">
-            <strong>
-              (*Note: Acara hanya diadakan di rumah mempelai wanita, tidak ada acara di rumah mempelai pria)
-            </strong>
-          </p>
-
           <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=The Wedding of Yusa and Yofan&details&dates=20221118T130000/20221118T150000&location=Jl. Sindujoyo Gg. XVIA No. 11, Kec. Gresik, Kabupaten Gresik, Jawa Timur" rel="nofollow noopener noreferrer external"
-            class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3" target="_blank">
+            class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3 transition" target="_blank">
             <i class='bx bxs-calendar-heart fs-4'></i>
             <p class="mb-0 fs-5">
               <strong>
@@ -607,7 +607,7 @@
           </div>
 
           <a href="https://goo.gl/maps/sVaLYgnBna9youZA8" rel="nofollow noopener noreferrer external"
-            class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3" target="_blank">
+            class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3 transition" target="_blank">
             <i class='bx bxs-map fs-4'></i>
             <p class="mb-0 fs-5">
               <strong>
@@ -617,7 +617,7 @@
           </a>
 
           <a href="https://goo.gl/maps/7kiRiYWHJdxn9Zki9" rel="nofollow noopener noreferrer external"
-            class="btn-map d-flex align-items-center justify-content-center gap-1" target="_blank">
+            class="btn-map d-flex align-items-center justify-content-center gap-1 transition" target="_blank">
             <i class='bx bxs-car fs-4'></i>
             <p class="mb-0 fs-5">
               <strong>
@@ -748,7 +748,7 @@
         </div>
 
         <a href="https://wa.me/+6282257030340" rel="nofollow noopener noreferrer" target="_blank"
-          class="btn-map d-flex align-items-center justify-content-center gap-1">
+          class="btn-map d-flex align-items-center justify-content-center gap-1 transition">
           <i class='bx bxl-whatsapp fs-4'></i>
           <p class="mb-0 fs-6">
             Konfirmasi WhatsApp
